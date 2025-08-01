@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Productos, marcas, home, decoracion, mercado libre, Rolling Code">
+    <meta name="description" content="página web que simula ser la oficial de mercado libre">
+    <meta name="author" content="Desarrollado por Pablo Basso">
+    <title>Challenge 10 Pablo Basso</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../media/logo-mercado-liebre.svg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-custom shadow py-3 sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="nav-logo"
+              src="../media/logo-mercado-liebre.svg"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="far fa-id-card me-2"></i
+                  ><span> Creá tu cuenta</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  <i class="fas fa-sign-in-alt me-2"></i
+                  ><span>Ingresá</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-shopping-basket me-2"></i
+                  ><span>Mis compras</span></a
+                >
+              </li>
+            </ul>
+            <div class="barra-busqueda ms-auto">
+              <div class="input-con-icono">
+                <input type="text" placeholder="Buscar productos, marcas..." />
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+<section class="container py-5">
+  <div class="row">
+    <!-- Imágenes -->
+    <div class="col-12 col-lg-6">
+      <div class="mb-3">
+        <img src="../media/audifono.webp" alt="Auriculares" class="img-fluid rounded border">
+      </div>
+      <div class="d-flex gap-2">
+        <img src="../media/audifono.webp" alt="Vista 1" class="img-thumbnail" width="70">
+        <img src="../media/audifono1.webp" alt="Vista 2" class="img-thumbnail" width="70">
+        <img src="../media/audifono2.webp" alt="Vista 3" class="img-thumbnail" width="70">
+      </div>
+    </div>
+
+    <!-- Información del producto -->
+    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+      <h2 class="fw-bold">Auriculares Sony WH-1000XM5</h2>
+
+      <div class="mb-2">
+        <span class="text-warning">★★★★★</span>
+        <small>(552 opiniones)</small>
+      </div>
+
+      <p class="text-decoration-line-through text-muted">$50.000</p>
+      <h3 class="text-success fw-bold">$45.000</h3>
+      <span class="badge bg-success">10% OFF</span>
+
+      <div class="bg-light p-3 mt-3 rounded d-flex justify-content-between align-items-center">
+        <div>
+          <strong>Vendido por Sony Store</strong><br>
+          <small class="text-success"><i class="fas fa-medal me-2 text-success"></i>MercadoLíder Gold</small>
+        </div>
+        <div class="text-end text-success">
+          <i class="fas fa-thumbs-up me-2 text-success"></i>99% positivas<br>
+          <small class="text-muted">5000 ventas</small>
+        </div>
+      </div>
+
+      <p class="text-success mt-3"><i class="bi bi-check-circle-fill"></i> Stock disponible</p>
+
+      <div class="d-flex align-items-center mb-3">
+        <label class="me-2">Cantidad:</label>
+        <div class="input-group w-auto">
+          <button class="btn btn-outline-secondary">-</button>
+          <input type="text" value="1" class="form-control text-center" style="width: 60px;">
+          <button class="btn btn-outline-secondary">+</button>
+        </div>
+        <span class="ms-2 text-muted">(Stock disponible)</span>
+      </div>
+
+      <div class="d-grid gap-2 mb-4">
+        <button class="btn btn-primary btn-lg">Comprar ahora</button>
+        <button class="btn btn-outline-primary btn-lg">Agregar al carrito</button>
+      </div>
+
+      <div class="border p-3 rounded">
+        <p class="mb-1"><i class="bi bi-truck"></i> <strong>Envío gratis a todo el país</strong></p>
+        <small class="text-muted">Llega entre el 15 y 20 de enero</small>
+        <span class="text-success float-end fw-bold">Gratis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+    <!-- Footer -->
+<footer>
+
+<section class="footer-copyright text-center text-muted py-3">
+  <div class="container">
+    <small>Copyright © 1999–2025 <strong>MercadoLibre S.R.L.</strong> Todos los derechos reservados.</small>
+  </div>
+</section>
+
+</footer>
+
+
+<!-- Modal de login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title text-primary-emphasis" id="loginModalLabel">Ingresá a tu cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body bg-body-secondary">
+        <form>
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre de usuario">
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

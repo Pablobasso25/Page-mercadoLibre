@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Productos, marcas, home, decoracion, mercado libre, Rolling Code">
+    <meta name="description" content="página web que simula ser la oficial de mercado libre">
+    <meta name="author" content="Desarrollado por Pablo Basso">
+    <title>Challenge 10 Pablo Basso</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./media/logo-mercado-liebre.svg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    
+    <header>
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-custom shadow py-3 sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="nav-logo"
+              src="./media/logo-mercado-liebre.svg"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registroModal"><i class="far fa-id-card me-2"></i
+                  ><span> Creá tu cuenta</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  <i class="fas fa-sign-in-alt me-2"></i
+                  ><span>Ingresá</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-shopping-basket me-2"></i
+                  ><span>Mis compras</span></a
+                >
+              </li>
+            </ul>
+            <div class="barra-busqueda ms-auto">
+              <div class="input-con-icono">
+                <input type="text" placeholder="Buscar productos, marcas..." />
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Portada  -->
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./media/D_NQ_630123-MLA86276689967_062025-OO.webp"
+              class="d-block w-100"
+              alt="banner1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./media/D_NQ_743265-MLA86102144515_062025-OO.webp"
+              class="d-block w-100"
+              alt="banner2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./media/D_NQ_767480-MLA86280604571_062025-OO.webp"
+              class="d-block w-100"
+              alt="banner3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./media/D_NQ_803967-MLA86466180635_062025-OO.webp"
+              class="d-block w-100"
+              alt="banner4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./media/D_NQ_944395-MLA83017655050_032025-OO.webp"
+              class="d-block w-100"
+              alt="banner5"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+    <!-- Beneficios -->
+
+      <section class="bg-custom-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="mt-4 titulares fw-bold">
+                Ahorrá en tus envíos y compras
+              </h2>
+            </div>
+          </div>
+          <div class="container py-4">
+            <div
+              class="info-card bg-light d-flex justify-content-between flex-wrap gap-4"
+            >
+              <div class="info-item">
+                <i class="fas fa-truck"></i>
+                <div class="ms-3">
+                  <div>Envíos gratis en millones de productos</div>
+                  <div><strong>desde $ 15.000</strong></div>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-credit-card"></i>
+                <div class="ms-3">
+                  3 cuotas extra <strong>sin interés</strong>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-hamburger"></i>
+                <div class="ms-3">
+                  <div>Envío gratis en tus pedidos de</div>
+                  <div><strong>"Restaurantes" desde $ 4.000</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Categoría destacadas -->
+      <section class="seccion-categorias bg-custom-section">
+    <div class="container">
+      <h2 class="mt-4 titulares fw-bold">Categorías destacadas</h2>
+      <div class="row g-3 mt-3">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="categoria-card bg-white">
+            <img src="media/img-samsung-galaxy-s10.jpg" class="categoria-img" alt="Celulares">
+            <div class="categoria-nombre fw-bold">Celulares y tablets</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="categoria-card bg-white">
+            <img src="media/img-cafetera-moulinex.jpg" class="categoria-img" alt="Cafeteras">
+            <div class="categoria-nombre fw-bold">Cafeteras</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="categoria-card bg-white">
+            <img src="media/categoriLaptop.webp" class="categoria-img" alt="Notebooks">
+            <div class="categoria-nombre fw-bold">Notebooks</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="categoria-card bg-white">
+            <img src="media/categoriAutos.webp" class="categoria-img" alt="Autos">
+            <div class="categoria-nombre fw-bold">Autos y motos</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="categoria-card bg-white">
+            <img src="media/categoriLavarropas.webp" class="categoria-img" alt="Lavarropas">
+            <div class="categoria-nombre fw-bold">Lavarropas</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="categoria-card bg-white">
+            <img src="media/categoriFitnes.webp" class="categoria-img" alt="Deportes">
+            <div class="categoria-nombre fw-bold">Deportes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Ofertas imperdibles -->
+        <section class="seccion-ofertas bg-custom-section ">
+    <div class="container ">
+      <div class="titulo-ofertas">
+        <h4 class="text-primary">Ofertas imperdibles</h4>
+        <a href="#" class="text-primary">Ver todas las ofertas</a>
+      </div>
+
+      <div class="row g-3 justify-content-center mt-3">
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="producto-card bg-white">
+            <span class="etiqueta-descuento">-25%</span>
+            <img src="media/img-cafetera-moulinex.jpg" alt="Cafetera">
+            <div>Cafetera Moulinex roja</div>
+            <div class="precio-original">$15.000</div>
+            <div class="precio-descuento">$11.250</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="producto-card bg-white">
+            <span class="etiqueta-descuento">-25%</span>
+            <img src="media/img-macbook-pro-2019.jpg" alt="Macbook">
+            <div>Macbook Pro 2019</div>
+            <div class="precio-original">$15.000</div>
+            <div class="precio-descuento">$11.250</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="producto-card bg-white">
+            <span class="etiqueta-descuento">-25%</span>
+            <img src="media/img-tv-samsung-smart.jpg" alt="TV">
+            <div>SmartTV Samsung 43"</div>
+            <div class="precio-original">$15.000</div>
+            <div class="precio-descuento">$11.250</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="producto-card bg-white">
+            <span class="etiqueta-descuento">-25%</span>
+            <img src="media/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy">
+            <div>Samsung Galaxy S10</div>
+            <div class="precio-original">$15.000</div>
+            <div class="precio-descuento">$11.250</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Productos destacados -->
+    <section class="seccion-destacados bg-custom-section">
+      <div class="container">
+        <div class="titulo-ofertas">
+        <h4 class="mt-4 titulares fw-bold">Productos destacados</h4>
+      </div>
+        <div class="row g-3 mt-3">
+          <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="producto-card2 bg-white">
+            <span class="etiqueta-descuento">-10%</span>
+            <div class="card-img-box">
+              <img src="media/tv.webp" alt="Smart TV">
+            </div>
+            <div class="fw-bold">Smart TV Quint 43 Pulgadas Qt3</div>
+            <div class="precio-original">$450.000</div>
+            <div class="precio-descuento">$405.000</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="producto-card2 bg-white">
+            <span class="etiqueta-descuento">-10%</span>
+            <div class="card-img-box">
+              <img src="media/audifono.webp" alt="Auriculares">
+            </div>
+            <div class="fw-bold"><a href="./pages/detallesDelProducto.html">Auriculares Sony WH-1000XM5</a></div>
+            <div class="precio-original">$50.000</div>
+            <div class="precio-descuento">$45.000</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="producto-card2 bg-white">
+            <span class="etiqueta-descuento">-10%</span>
+            <div class="card-img-box">
+              <img src="media/licor.webp" alt="Licor">
+            </div>
+            <div class="fw-bold">Licor Sheridan 750cc Origen Irlanda</div>
+            <div class="precio-original">$22.000</div>
+            <div class="precio-descuento">$19.800</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="producto-card2 bg-white">
+            <span class="etiqueta-descuento">-10%</span>
+            <div class="card-img-box">
+              <img src="media/convertidorTV.webp" alt="Decodificador">
+            </div>
+            <div class="fw-bold">Convertidor Smart Tv 4k Ultra Hd</div>
+            <div class="precio-original">$150.000</div>
+            <div class="precio-descuento">$135.000</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="producto-card2 bg-white">
+            <span class="etiqueta-descuento">-10%</span>
+            <div class="card-img-box">
+              <img src="media/proyector.webp" alt="Proyector">
+            </div>
+            <div class="fw-bold">Proyector Portatil 4k Wifi Bluetooth</div>
+            <div class="precio-original">$256.000</div>
+            <div class="precio-descuento">$230.400</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="producto-card2 bg-white">
+            <span class="etiqueta-descuento">-10%</span>
+            <div class="card-img-box">
+              <img src="media/jagger.webp" alt="Licor jaguermaister">
+            </div>
+            <div class="fw-bold">jaguermaister 700ml - Licor</div>
+            <div class="precio-original">$55.000</div>
+            <div class="precio-descuento">$49.500</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="producto-card2 bg-white">
+            <span class="etiqueta-descuento">-10%</span>
+            <div class="card-img-box">
+              <img src="media/asus.webp" alt="Notebook Asus">
+            </div>
+            <div class="fw-bold">Notebook Asus Vivobook</div>
+            <div class="precio-original">$1.250.000</div>
+            <div class="precio-descuento">$1.125.000</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="producto-card2 bg-white">
+            <span class="etiqueta-descuento">-10%</span>
+            <div class="card-img-box">
+              <img src="media/iphone.webp" alt="Iphone 15 pro Max">
+            </div>
+            <div class="fw-bold">Iphone Pro Max 256GB</div>
+            <div class="precio-original">$1.560.000</div>
+            <div class="precio-descuento">$1.404.000</div>
+            <div class="envio-gratis"><i class="fas fa-shipping-fast me-2"></i> Envío gratis</div>
+          </div>
+        </div>
+        </div>   
+      </div>
+    </section>
+
+    <!-- Banner footer -->
+    <section>
+      <div class="bg-custom-section">
+        <img src="media/img-home-banner.jpg" class="mt-5  w-100" alt="...">
+      </div>
+    </section>
+</main>
+    <!-- Footer -->
+<footer>
+<section class="footer-beneficios py-5 bg-white">
+  <div class="container">
+    <div class="row text-center justify-content-center align-items-start footer-info">
+      
+
+      <div class="col-12 col-md-4 border-end mb-4 mb-md-0">
+        <i class="fas fa-credit-card me-2"></i>
+        <h5 class="fw-semibold">Elegí cómo pagar</h5>
+        <p class="mb-1">Podés pagar con tarjeta, débito, efectivo o con Cuotas sin Tarjeta.</p>
+        <a href="#" class="text-primary text-decoration-none">Cómo pagar tus compras</a>
+      </div>
+      
+
+      <div class="col-12 col-md-4 border-end mb-4 mb-md-0">
+        <i class="fas fa-gift me-2"></i>
+        <h5 class="fw-semibold">Envío gratis desde $ 33.000</h5>
+        <p class="mb-1">Solo por estar registrado en Mercado Libre tenés envíos gratis en miles de productos.</p>
+      </div>
+      
+
+      <div class="col-12 col-md-4">
+        <i class="fas fa-user-shield "></i>
+        <h5 class="fw-semibold">Seguridad, de principio a fin</h5>
+        <p class="mb-1">¿No te gusta? ¡Devolvelo! Estás siempre protegido, no hay nada que no puedas hacer.</p>
+        <a href="#" class="text-primary text-decoration-none">Cómo te protegemos</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer-copyright text-center text-muted py-3">
+  <div class="container">
+    <small>Copyright © 1999–2025 <strong>MercadoLibre S.R.L.</strong> Todos los derechos reservados.</small>
+  </div>
+</section>
+
+</footer>
+
+
+    <!-- Modal de login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title text-primary-emphasis" id="loginModalLabel">Ingresá a tu cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body bg-body-secondary">
+        <form>
+          <div class="mb-3">
+            
+            <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre de usuario" required>
+          </div>
+          <div class="mb-3">
+            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Modal de Registro -->
+<div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="registroModalLabel">Registro de usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body bg-body-secondary">
+        <form id="formRegistro">
+
+          <!-- Imagen de perfil -->
+          <div class="text-center mb-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Foto de perfil" width="100" class="rounded-circle mb-2">
+            <div>
+              <input type="file" class="form-control w-auto mx-auto" id="fotoPerfil">
+              <small class="text-muted">Agregar foto de perfil</small>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Nombre y Apellido" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-md-6">
+              <input type="date" class="form-control" placeholder="Fecha de nacimiento" required>
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" placeholder="Domicilio" required>
+            </div>
+          </div>
+
+          <!-- Rol -->
+          <div class="mt-4">
+            <label class="form-label fw-bold">Rol:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="rol" id="vender" value="vender">
+              <label class="form-check-label" for="vender">Vender</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="rol" id="comprar" value="comprar">
+              <label class="form-check-label" for="comprar">Comprar</label>
+            </div>
+          </div>
+
+          <!-- Categorías -->
+          <div class="mt-4">
+            <label class="form-label fw-bold">Categorías</label>
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Electro" id="electro">
+                  <label class="form-check-label" for="electro">Electro</label>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Moda" id="moda">
+                  <label class="form-check-label" for="moda">Moda</label>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Hogar" id="hogar">
+                  <label class="form-check-label" for="hogar">Hogar</label>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Juguetería" id="jugueteria">
+                  <label class="form-check-label" for="jugueteria">Juguetería</label>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="Vida Sana" id="vidasana">
+                  <label class="form-check-label" for="vidasana">Vida Sana</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contraseñas -->
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <input type="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <div class="col-md-6">
+              <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
+            </div>
+          </div>
+
+          <!-- Botones -->
+          <div class="d-flex justify-content-between mt-4">
+            <button type="submit" class="btn btn-primary w-50 me-2">Registrar</button>
+            <button type="reset" class="btn btn-danger w-50 ms-2">Borrar</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
