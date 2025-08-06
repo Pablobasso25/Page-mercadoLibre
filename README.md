@@ -44,7 +44,8 @@ It features a modern layout, interactive elements, and a clean content structure
  - HTML5
 - CSS3
 - Visual Studio Code (Live Server)
-## 🙋‍♂️ Autor | AuthorPablo Basso
+## 🙋‍♂️ Autor | Author 
+   Pablo Basso
 📍 Tucumán, Argentina
 
 🔗 GitHub Profile
