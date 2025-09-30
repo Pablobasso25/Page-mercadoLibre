@@ -1,0 +1,18 @@
+import { productos } from "./modules/productos.js";
+
+const botonBuscar = document.getElementById("botonBuscar");
+const inputBuscador = document.getElementById("buscador");
+
+botonBuscar.addEventListener("click", () => {
+  const termino = inputBuscador.value.trim().toLowerCase();
+
+  const productoEncontrado = productos.find(p =>
+    p.nombre.toLowerCase().includes(termino)
+  );
+
+  if (productoEncontrado) {
+    window.location.href = `./pages/detalle.html?id=${productoEncontrado.id}`;
+  } else {
+    alert("No se encontró ningún producto con ese nombre.");
+  }
+});

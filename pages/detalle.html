@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Productos, marcas, home, decoracion, mercado libre, Rolling Code">
+    <meta name="description" content="página web que simula ser la oficial de mercado libre">
+    <meta name="author" content="Desarrollado por Pablo Basso">
+    <title>Challenge 10 Pablo Basso</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../media/logo-mercado-liebre.svg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-custom shadow py-3 sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="nav-logo"
+              src="../media/logo-mercado-liebre.svg"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="far fa-id-card me-2"></i
+                  ><span> Creá tu cuenta</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                  <i class="fas fa-sign-in-alt me-2"></i
+                  ><span>Ingresá</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-shopping-basket me-2"></i
+                  ><span>Mis compras</span></a
+                >
+              </li>
+            </ul>
+            <div class="barra-busqueda ms-auto">
+              <div class="input-con-icono">
+                <input type="text" placeholder="Buscar productos, marcas..." />
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main class="container py-5">
+    <div class="row">
+      <!-- Aquí se renderiza el producto dinámico -->
+    </div>
+  </main>
+
+    <!-- Footer -->
+<footer>
+
+<section class="footer-copyright text-center text-muted py-3">
+  <div class="container">
+    <small>Copyright © 1999–2025 <strong>MercadoLibre S.R.L.</strong> Todos los derechos reservados.</small>
+  </div>
+</section>
+
+</footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../js/main-detalle.js"></script>
+
+
+
+  </body>
+</html>
