@@ -1,5 +1,8 @@
 import { productos } from "./modules/productos.js";
 import { manejarRegistro } from "./modules/registro.js";
+import { manejarLogin } from './modules/login.js';
+
+manejarLogin();
 
 document.addEventListener("DOMContentLoaded", manejarRegistro);
 
