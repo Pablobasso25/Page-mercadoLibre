@@ -111,5 +111,3 @@ function activarValidacionesVisuales() {
 
 
 
-
-// okey ya entiendo, que pasa si quiero que este usuario ahora pueda acceder a la pagina con el usuario y contraseña creada , se puede ? 

@@ -1,10 +1,14 @@
 import { productos } from "./modules/productos.js";
 import { manejarRegistro } from "./modules/registro.js";
 import { manejarLogin } from './modules/login.js';
+import { actualizarNavbar, cerrarSesion } from "./modules/sesion.js";
 
 manejarLogin();
 
+
 document.addEventListener("DOMContentLoaded", manejarRegistro);
+document.getElementById('btnCerrarSesion').addEventListener('click', cerrarSesion);
+
 
 const botonBuscar = document.getElementById("botonBuscar");
 const inputBuscador = document.getElementById("buscador");
