@@ -1,4 +1,7 @@
 import { productos } from "./modules/productos.js";
+import { manejarRegistro } from "./modules/registro.js";
+
+document.addEventListener("DOMContentLoaded", manejarRegistro);
 
 const botonBuscar = document.getElementById("botonBuscar");
 const inputBuscador = document.getElementById("buscador");
