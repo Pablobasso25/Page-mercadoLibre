@@ -22,9 +22,22 @@ export function manejarLogin() {
     bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();  //cierra el modal utilizando bootstrap
 
     sessionStorage.setItem('usuarioActivo', JSON.stringify(usuarioEncontrado));  // se guarda al usuario logueado en sessionStorage, lo que te permite mantener la sesión activa mientras el navegador esté abierto
+    localStorage.setItem('usuarioActivo', JSON.stringify(usuarioEncontrado));  // tambien se guarda en localStorage para que al volver al home siga la sesión abierta
     actualizarNavbar();
   });
 }
+
+// función para recuperar la sesión si se perdio al navegar entre páginas
+export function restaurarSesion(){
+
+  const usuarioLocal = JSON.parse(localStorage.getItem('usuarioActivo'));
+  const usuarioSession = JSON.parse(sessionStorage.getItem('usuarioActivo'));
+  
+  if (!usuarioSession && usuarioLocal) {
+    sessionStorage.setItem('usuarioActivo', JSON.stringify(usuarioLocal));
+  }
+}
+
 
 /* conclución :
 1- El registro guarda los datos en localStorage
