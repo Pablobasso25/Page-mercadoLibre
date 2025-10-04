@@ -42,7 +42,7 @@ span:hover{
 }
 .barra-busqueda {
       background-color: #ecc92b; /* amarillo */
-      padding: 20px;
+     
       display: flex;
       justify-content: center;
     }

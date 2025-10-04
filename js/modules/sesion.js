@@ -1,5 +1,16 @@
 
 
+export function restaurarSesion() {
+  const usuarioLocal = JSON.parse(localStorage.getItem('usuarioActivo'));
+  const usuarioSession = JSON.parse(sessionStorage.getItem('usuarioActivo'));
+
+  if (!usuarioSession && usuarioLocal) {
+    sessionStorage.setItem('usuarioActivo', JSON.stringify(usuarioLocal));
+    actualizarNavbar(); // ← esto actualiza el navbar después de restaurar
+  }
+}
+
+
 export function actualizarNavbar(){
     const usuarioActivo = JSON.parse(sessionStorage.getItem("usuarioActivo")); //Recupera el usuario logueado desde "sessionStorage", si no hay sesión activa, "usuarioActivo será "null
 
@@ -29,6 +40,7 @@ export function actualizarNavbar(){
 
 
 }
+
 
 export function cerrarSesion() {
   sessionStorage.removeItem('usuarioActivo'); // Elimina el usuario logueado de sessionStorage, cerrando la sesión
