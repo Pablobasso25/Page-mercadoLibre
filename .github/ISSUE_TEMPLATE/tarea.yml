@@ -1,0 +1,47 @@
+name: Tarea técnica
+description: Usá esta plantilla para describir una nueva funcionalidad, mejora o refactor técnico.
+title: "[Tarea] Breve descripción aquí"
+labels: ["enhancement", "tarea"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📝 Descripción
+        Explicá brevemente qué se quiere lograr.
+
+  - type: textarea
+    id: tareas
+    attributes:
+      label: 📌 Tareas específicas
+      description: Listá los pasos técnicos o visuales que hay que implementar.
+      placeholder: |
+        - [ ] Crear vista admin.html
+        - [ ] Mostrar usuarios desde localStorage
+        - [ ] Validar acceso administrador
+    validations:
+      required: true
+
+  - type: textarea
+    id: archivos
+    attributes:
+      label: 📁 Archivos involucrados
+      description: Indicá qué archivos se verán afectados.
+      placeholder: |
+        - /pages/admin.html
+        - /js/modules/admin.js
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: 🧠 Contexto adicional
+      description: Agregá notas técnicas, capturas o decisiones de diseño relevantes.
+      placeholder: Ejemplo: este módulo se conecta con el login ya implementado.
+
+  - type: input
+    id: relacionado
+    attributes:
+      label: 🔗 Relacionado con
+      description: Número de PR o issue vinculado (opcional)
+      placeholder: "#7"
