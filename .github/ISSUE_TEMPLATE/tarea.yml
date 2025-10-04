@@ -3,10 +3,12 @@ description: Plantilla para tareas técnicas colaborativas
 title: "[Tarea] Breve descripción aquí"
 labels: ["enhancement"]
 assignees: []
+
 body:
   - type: markdown
     attributes:
       value: "## 📝 Descripción\nExplicá brevemente qué se quiere lograr."
+
   - type: textarea
     id: tareas
     attributes:
@@ -15,3 +17,24 @@ body:
       placeholder: "- [ ] Crear vista admin.html\n- [ ] Mostrar usuarios desde localStorage"
     validations:
       required: true
+
+  - type: textarea
+    id: archivos
+    attributes:
+      label: 📁 Archivos involucrados
+      description: Indicá qué archivos se verán afectados.
+      placeholder: "- /pages/admin.html\n- /js/modules/admin.js"
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: 🧠 Contexto adicional
+      description: Agregá notas técnicas, capturas o decisiones de diseño relevantes.
+      placeholder: "Este módulo se conecta con el login ya implementado."
+
+  - type: input
+    id: relacionado
+    attributes:
+      label: 🔗 Relacionado con
+      description: Número de PR o issue vinculado (opcional)
+      placeholder: "#7"
