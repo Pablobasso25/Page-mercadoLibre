@@ -74,36 +74,35 @@
     <!-- Imágenes -->
     <div class="col-12 col-lg-6">
       <div class="mb-3">
-        <img src="../media/audifono.webp" alt="Auriculares" class="img-fluid rounded border">
+        <img id="imagen1Producto" src="../media/audifono.webp" alt="Auriculares" class="img-fluid rounded border">
       </div>
       <div class="d-flex gap-2">
-        <img src="../media/audifono.webp" alt="Vista 1" class="img-thumbnail" width="70">
-        <img src="../media/audifono1.webp" alt="Vista 2" class="img-thumbnail" width="70">
-        <img src="../media/audifono2.webp" alt="Vista 3" class="img-thumbnail" width="70">
+        <img id="imagen2Producto" src="../media/audifono2.webp" alt="Vista 1" class="img-thumbnail" width="70">
+        <img id="imagen3Producto" src="../media/audifono1.webp" alt="Vista 2" class="img-thumbnail" width="70">
       </div>
     </div>
 
     <!-- Información del producto -->
     <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-      <h2 class="fw-bold">Auriculares Sony WH-1000XM5</h2>
+      <h2 id="nombreProducto" class="fw-bold">Auriculares Sony WH-1000XM5</h2>
 
       <div class="mb-2">
         <span class="text-warning">★★★★★</span>
-        <small>(552 opiniones)</small>
+        <small>(<small id="opinionesProducto">552</small> opiniones)</small>
       </div>
 
-      <p class="text-decoration-line-through text-muted">$50.000</p>
-      <h3 class="text-success fw-bold">$45.000</h3>
-      <span class="badge bg-success">10% OFF</span>
+      <p id="precioOriginalProducto" class="text-decoration-line-through text-muted">$50.000</p>
+      <h3 id="precioDescProducto" class="text-success fw-bold">$45.000</h3>
+      <span id="descuentoProducto" class="badge bg-success">10% OFF</span>
 
       <div class="bg-light p-3 mt-3 rounded d-flex justify-content-between align-items-center">
         <div>
-          <strong>Vendido por Sony Store</strong><br>
+          <strong>Vendido por</strong><strong id="vendedorProducto"> Sony Store</strong><br>
           <small class="text-success"><i class="fas fa-medal me-2 text-success"></i>MercadoLíder Gold</small>
         </div>
         <div class="text-end text-success">
           <i class="fas fa-thumbs-up me-2 text-success"></i>99% positivas<br>
-          <small class="text-muted">5000 ventas</small>
+          <small class="text-muted" id="cantVentasProducto">5000</small><small class="text-muted"> ventas</small>
         </div>
       </div>
 
@@ -126,7 +125,7 @@
 
       <div class="border p-3 rounded">
         <p class="mb-1"><i class="bi bi-truck"></i> <strong>Envío gratis a todo el país</strong></p>
-        <small class="text-muted">Llega entre el 15 y 20 de enero</small>
+        <small class="text-muted">Llega entre el </small><small id="entregaProducto" class="text-muted">15 y 20 de enero</small>
         <span class="text-success float-end fw-bold">Gratis</span>
       </div>
     </div>
@@ -147,39 +146,11 @@
 
 </footer>
 
-
-<!-- Modal de login -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      
-      <div class="modal-header">
-        <h5 class="modal-title text-primary-emphasis" id="loginModalLabel">Ingresá a tu cuenta</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-
-      <div class="modal-body bg-body-secondary">
-        <form>
-          <div class="mb-3">
-            
-            <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre de usuario">
-          </div>
-          <div class="mb-3">
-            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
-          </div>
-          <button type="submit" class="btn btn-primary w-100">Ingresar</button>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-
+  <script type="module" src="../js/modules/detalle.js"></script>
   </body>
 </html>

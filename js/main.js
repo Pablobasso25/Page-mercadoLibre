@@ -1,6 +1,6 @@
 
 // Importaciones necesarias
-import { productos } from "./modules/productos.js";
+/* import { productos } from "./modules/productos.js"; */
 import { manejarRegistro } from "./modules/registro.js";
 import { manejarLogin } from './modules/login.js';
 import { restaurarSesion, actualizarNavbar, cerrarSesion } from "./modules/sesion.js";

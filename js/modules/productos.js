@@ -1,12 +1,13 @@
 // Lista simulada de productos
-export const productos = [
+/* export const productos = [
   { id: 1, nombre: "Celular Samsung", precio: 120000, categoria: "Electronics", imagen: "../media/celular.jpg" },
   { id: 2, nombre: "Zapatillas Nike", precio: 85000, categoria: "Fashion", imagen: "../media/zapatillas.jpg" },
   { id: 3, nombre: "Notebook Lenovo", precio: 350000, categoria: "Computers", imagen: "../media/notebook.jpg" },
   { id: 4, nombre: "Auriculares JBL", precio: 45000, categoria: "Audio", imagen: "../media/auriculares.jpg" }
 ];
+ */
 
-export function renderizarProductos(lista, contenedor) {
+/* export function renderizarProductos(lista, contenedor) {
   contenedor.innerHTML = "";
 
   lista.forEach(prod => {
@@ -39,4 +40,33 @@ export function renderizarProductos(lista, contenedor) {
     card.append(img, nombre, precio, boton);
     contenedor.appendChild(card);
   });
+} */
+
+export class Producto {
+  constructor (
+    id,
+    imagen1, 
+    imagen2, 
+    imagen3, 
+    nombre, 
+    opiniones, 
+    precioOriginal,
+    precioDesProducto,
+    descuentoProducto,
+    vendedorProducto,
+    cantidadVentas
+  ){
+
+    this.id = id,
+    this.imagen1 = imagen1,
+    this.imagen2 = imagen2,
+    this.imagen3 = imagen3,
+    this.nombre = nombre,
+    this.opiniones =opiniones,
+    this.precioOriginal = precioOriginal,
+    this.precioDesProducto = precioDesProducto,
+    this.descuentoProducto =descuentoProducto,
+    this.vendedorProducto =vendedorProducto,
+    this.cantidadVentas =cantidadVentas
+  }
 }

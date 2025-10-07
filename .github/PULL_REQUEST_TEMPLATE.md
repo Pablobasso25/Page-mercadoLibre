@@ -30,4 +30,4 @@ Si corresponde, se agregan imágenes del resultado visual o del flujo funcional.
 ---
 
 ## 🧠 Comentarios adicionales
-[Aquí podes dejar notas para el revisor, dudas técnicas o decisiones de diseño que quieras explicar]
+[Aquí dejar notas para el revisor, dudas técnicas o decisiones de diseño que quieras explicar]
