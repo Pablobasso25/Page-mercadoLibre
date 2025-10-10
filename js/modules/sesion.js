@@ -49,12 +49,10 @@ export function actualizarNavbar() {
     navMisCompras.style.display = "none"; // oculta el botón "mis compras"
     navAdmin.style.display = "block"; // muestra el botón si es vendedor
   } else {
-    navUsuario.style.display = "none"; // oculta el saludo
-    navCerrarSesion.style.display = "none"; // oculta el botón de cerrar sesión
-    navIngresar.style.display = "block"; // muestra el botón de "ingresá"
-    navMisCompras.style.display = "none"; // oculta el botón "mis compras"
-    navCrearCuenta.style.display = "block"; // muestra el botón "creá tu cuenta"
-    navAdmin.style.display = "none"; // oculta si no lo es
+    navCerrarSesion.style.display = "block"; // muestra el botón de cerrar sesión
+    navIngresar.style.display = "none"; // oculta el botón de "ingresá"
+    navMisCompras.style.display = "block"; // activa el acceso a "mis compras"
+    navCrearCuenta.style.display = "none"; // oculta el botón "creá tu cuenta"
   }
 }
 
