@@ -27,3 +27,5 @@ export class Producto {
     this.cantidadVentas =cantidadVentas
   }
 }
+
+
