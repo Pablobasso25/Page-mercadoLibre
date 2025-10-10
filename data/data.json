@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "imagen1":"./media/audifono.webp",
+        "imagen2": "./media/audifono1.webp",
+        "imagen3": "./media/audifono2.webp",
+        "nombre": "Auriculares Sony WH-1000X",
+        "opiniones": "550",
+        "precioOriginal": 50000,
+        "precioDesProducto": 45000,
+        "descuentoProducto": "10 % OFF",
+        "vendedorProducto": "Sony store",
+        "cantidadVentas": 5000
+
+    }
+]
