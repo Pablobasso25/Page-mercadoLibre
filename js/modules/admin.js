@@ -1,9 +1,24 @@
 
-// Este archivo orquesta todo el flujo del panel de administración
+// Este archivo maneja todo el flujo del panel de administración
 
 import { Producto } from "./productos.js";
 import { obtenerProductos, guardarProductos } from "./storage.js";
 import { renderizarTabla } from "./ui.js";
+import { restaurarSesion, esAdmin } from "./sesion.js";
+
+
+// Verifica si hay sesión activa y si el usuario tiene rol "vendedor"
+restaurarSesion(); // Restaura sesión si viene de otra página
+
+const usuarioActivo = JSON.parse(sessionStorage.getItem("usuarioActivo"));
+
+if (!usuarioActivo || !esAdmin()) {
+  alert("Acceso denegado. Esta sección es solo para vendedores.");
+  window.location.href = "index.html"; // Redirige al home
+}
+
+
+
 
 // Inicializamos el array de productos desde localStorage
 let productos = obtenerProductos();

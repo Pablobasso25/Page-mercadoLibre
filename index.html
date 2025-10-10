@@ -91,7 +91,19 @@
                   ><span id="nombreActivo"></span>
                 </a>
               </li>
-              <li class="nav-item" id="navCerrarSesion" style="display: none">
+              <button
+                id="navAdmin"
+                style="display: none"
+                class="nav-link btn btn-secondary btn-sm ms-2"
+                onclick="location.href='./pages/admin.html'"
+              >
+                Panel Admin
+              </button>
+              <li
+                class="nav-item mt-1"
+                id="navCerrarSesion"
+                style="display: none"
+              >
                 <button
                   class="btn btn-outline-danger btn-sm ms-2"
                   id="btnCerrarSesion"
@@ -695,10 +707,12 @@
                     class="form-check-input"
                     type="radio"
                     name="rol"
-                    id="vender"
-                    value="vender"
+                    id="vendedor"
+                    value="vendedor"
                   />
-                  <label class="form-check-label" for="vender">Vendedor</label>
+                  <label class="form-check-label" for="vendedor"
+                    >Vendedor</label
+                  >
                 </div>
                 <div class="form-check form-check-inline">
                   <input
