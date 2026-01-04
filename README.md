@@ -53,8 +53,10 @@ It features a modern layout, interactive elements, and a clean content structure
 ##  📬 Contribuciones | Contributions
 ### ¿Querés mejorar el diseño, agregar funcionalidades o dejar sugerencias?
 
-Abrí un issue o hacé un fork del proyecto. ¡Toda colaboración es bienvenida!Want to improve the design, add features, or share feedback?
-Feel free to open an issue or fork the project. All contributions are welcome!  💛 inspirado en MercadoLibre. 💛 inspired by MercadoLibre.
+Abrí un issue o hacé un fork del proyecto. ¡Toda colaboración es bienvenida!
+Want to improve the design, add features, or share feedback?
+Feel free to open an issue or fork the project. All contributions are welcome!  
+💛 inspirado en MercadoLibre. 💛 inspired by MercadoLibre.
 
 
 
